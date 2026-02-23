@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fa;
+        }
+
+        header {
+            background: #4facfe;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #4facfe;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: crimson;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Landing Page</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="content">
+    <div class="card">
+        <h2>Login Successful 🎉</h2>
+        <p>This is your landing page after login.</p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script>
+    function logout() {
+        alert("Logged out successfully!");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>
